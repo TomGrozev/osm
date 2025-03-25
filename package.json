@@ -1,0 +1,28 @@
+{
+  "name": "osm",
+  "version": "0.1.0",
+  "description": "Renders OSM map in Phoenix Component",
+  "module": "./priv/static/osm.esm.js",
+  "main": "./priv/static/osm.cjs.js",
+  "unpkg": "./priv/static/osm.min.js",
+  "jsdelivr": "./priv/static/osm.min.js",
+  "exports": {
+    "import": "./priv/static/osm.esm.js",
+    "require": "./priv/static/osm.cjs.js"
+  },
+  "scripts": {
+    "setup": "mix deps.get && npm install"
+  },
+  "author": "Tom Grozev",
+  "license": "ISC",
+  "devDependencies": {
+    "leaflet": "^1.9.4"
+  },
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "package.json",
+    "priv/static/*",
+    "assets/js/osm/*"
+  ]
+}
